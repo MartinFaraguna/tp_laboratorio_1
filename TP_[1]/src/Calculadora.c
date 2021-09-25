@@ -94,7 +94,7 @@ void mostrar(int num1, int num2, int sum, int rest, int multi, float div, long i
 	printf("\nEl resultado de %d - %d es: %d", num1, num2, rest);
 	printf("\nEl resultado de %d * %d es: %d", num1, num2, multi);
 	if (num2 != 0) {
-		printf("\nEl resultado de %d / %d es: %.2f", num1, num2, div);
+		printf("\nEl resultado de %d / %d es: %.3f", num1, num2, div);
 	} else {
 		printf("\nNo es posible dividir por cero");
 	}
