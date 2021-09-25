@@ -53,9 +53,9 @@ int resta(int num1, int num2) {
 
 float division(int num1, int num2) {
 
-	int division;
+	float division;
 
-	division = (float) num1 / num2;
+	division = (float)num1 / num2;
 
 	return division;
 }
@@ -80,8 +80,7 @@ int factorial(int num) {
 	return fact;
 }
 
-void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div,
-		int *fact1, int *fact2) {
+void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, int *fact1, int *fact2) {
 	*sum = suma(num1, num2);
 	*rest = resta(num1, num2);
 	*multi = multiplicacion(num1, num2);
@@ -95,7 +94,7 @@ void mostrar(int num1, int num2, int sum, int rest, int multi, float div, int fa
 	printf("\nResta: %d", rest);
 	printf("\nMultiplicacion: %d", multi);
 	if (num2 != 0) {
-		printf("\nDivision: %2.f", div);
+		printf("\nDivision: %.2f", div);
 	} else {
 		printf("\nDivision: No se puede dividir por 0");
 	}
