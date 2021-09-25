@@ -1,10 +1,7 @@
 /*
  ============================================================================
- Name        : TP.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Name        : TP 1
+ Author      : Martin Faraguna
  ============================================================================
  */
 

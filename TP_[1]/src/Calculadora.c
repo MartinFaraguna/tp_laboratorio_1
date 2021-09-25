@@ -90,23 +90,23 @@ void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, int
 }
 
 void mostrar(int num1, int num2, int sum, int rest, int multi, float div, int fact1, int fact2) {
-	printf("\nSuma: %d", sum);
-	printf("\nResta: %d", rest);
-	printf("\nMultiplicacion: %d", multi);
+	printf("\nEl resultado de %d + %d es: %d", num1, num2, sum);
+	printf("\nEl resultado de %d - %d es: %d", num1, num2, rest);
+	printf("\nEl resultado de %d * %d es: %d", num1, num2, multi);
 	if (num2 != 0) {
-		printf("\nDivision: %.2f", div);
+		printf("\nEl resultado de %d / %d es: %.2f", num1, num2, div);
 	} else {
-		printf("\nDivision: No se puede dividir por 0");
+		printf("\nNo es posible dividir por cero");
 	}
 	if (num1 > -1) {
-		printf("\nFactorial del primer numero: %d", fact1);
+		printf("\nEl factorial de %d es: %d", num1, fact1);
 	} else {
-		printf("\nFactorial del primer numero: No se puede factorear un numero negativo");
+		printf("\nNo se puede factorear un numero negativo");
 	}
 	if (num2 > -1) {
-		printf("\nFactorial del segundo numero: %d\n", fact2);
+		printf("\nEl factorial de %d es: %d\n", num2, fact2);
 	} else {
-		printf("\nFactorial del segundo numero: No se puede factorear un numero negativo\n");
+		printf("\nFactorearNo se puede factorear un numero negativo\n");
 	}
 }
 
