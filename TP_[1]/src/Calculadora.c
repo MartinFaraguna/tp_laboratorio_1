@@ -69,9 +69,9 @@ int multiplicacion(int num1, int num2) {
 	return multi;
 }
 
-int factorial(int num) {
+long int factorial(int num) {
 
-	int fact = 1;
+	long int fact = 1;
 
 	for (int i = 1; i < num + 1; i++) {
 		fact *= i;
@@ -80,7 +80,7 @@ int factorial(int num) {
 	return fact;
 }
 
-void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, int *fact1, int *fact2) {
+void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, long int *fact1, long int *fact2) {
 	*sum = suma(num1, num2);
 	*rest = resta(num1, num2);
 	*multi = multiplicacion(num1, num2);
@@ -89,7 +89,7 @@ void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, int
 	*fact2 = factorial(num2);
 }
 
-void mostrar(int num1, int num2, int sum, int rest, int multi, float div, int fact1, int fact2) {
+void mostrar(int num1, int num2, int sum, int rest, int multi, float div, long int fact1, long int fact2) {
 	printf("\nEl resultado de %d + %d es: %d", num1, num2, sum);
 	printf("\nEl resultado de %d - %d es: %d", num1, num2, rest);
 	printf("\nEl resultado de %d * %d es: %d", num1, num2, multi);
@@ -99,12 +99,12 @@ void mostrar(int num1, int num2, int sum, int rest, int multi, float div, int fa
 		printf("\nNo es posible dividir por cero");
 	}
 	if (num1 > -1) {
-		printf("\nEl factorial de %d es: %d", num1, fact1);
+		printf("\nEl factorial de %d es: %ld", num1, fact1);
 	} else {
 		printf("\nNo se puede factorear un numero negativo");
 	}
 	if (num2 > -1) {
-		printf("\nEl factorial de %d es: %d\n", num2, fact2);
+		printf("\nEl factorial de %d es: %ld\n", num2, fact2);
 	} else {
 		printf("\nFactorearNo se puede factorear un numero negativo\n");
 	}

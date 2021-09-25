@@ -11,8 +11,8 @@ int suma(int num1, int num2);
 int resta(int num1, int num2);
 float division(int num1, int num2);
 int multiplicacion(int num1, int num2);
-int factorial(int num);
-void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, int *fact1, int *fact2);
-void mostrar(int num1, int num2, int sum, int rest, int multi, float div, int fact1, int fact2);
+long int factorial(int num);
+void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, long int *fact1, long int *fact2);
+void mostrar(int num1, int num2, int sum, int rest, int multi, float div, long int fact1, long int fact2);
 
 #endif /* CALCULADORA_H_ */

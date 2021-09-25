@@ -17,8 +17,8 @@ int main(void) {
 	int resta;
 	int multiplicacion;
 	float division;
-	int factorial1;
-	int factorial2;
+	long int factorial1;
+	long int factorial2;
 
 	int opcion;
 
