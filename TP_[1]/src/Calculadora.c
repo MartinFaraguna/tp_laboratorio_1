@@ -81,15 +81,22 @@ long int factorial(int num) {
 }
 
 void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, long int *fact1, long int *fact2) {
+
+	if (num1 == NULL || num2 == NULL){
+
 	*sum = suma(num1, num2);
 	*rest = resta(num1, num2);
 	*multi = multiplicacion(num1, num2);
 	*div = division(num1, num2);
 	*fact1 = factorial(num1);
 	*fact2 = factorial(num2);
+	} else {
+
+	}
 }
 
 void mostrar(int num1, int num2, int sum, int rest, int multi, float div, long int fact1, long int fact2) {
+
 	printf("\nEl resultado de %d + %d es: %d", num1, num2, sum);
 	printf("\nEl resultado de %d - %d es: %d", num1, num2, rest);
 	printf("\nEl resultado de %d * %d es: %d", num1, num2, multi);
