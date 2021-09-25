@@ -16,6 +16,12 @@ int main(void) {
 
 	int num1;
 	int num2;
+	int suma;
+	int resta;
+	int multiplicacion;
+	float division;
+	int factorial1;
+	int factorial2;
 
 	int opcion;
 
@@ -23,24 +29,23 @@ int main(void) {
 	do {
 		opcion = menu();
 
-
 		switch (opcion) {
 		case 1:
-			printf("Usted ha seleccionado 1 Ingrese el Primer Operando\n");
 			op1(&num1);
 			break;
 		case 2:
-			printf("Usted ha seleccionado 2	Ingrese el Segundo Operando \n");
 			op2(&num2);
 			break;
 		case 3:
 			printf("Usted ha seleccionado 3 Calcular Operaciones \n");
+			operar(num1, num2, &suma, &resta, &multiplicacion, &division, &factorial1, &factorial2);
 			break;
 		case 4:
 			printf("Usted ha seleccionado 4 Mostrar Resultados \n");
+			mostrar(num1, num2, suma, resta, multiplicacion, division, factorial1, factorial2);
 			break;
 		case 5:
-			printf("Gracias, vuelva prontos!!\n");
+			printf("Gracias, vuelva pronto!!\n");
 			break;
 		default:
 			printf("\nOpcion incorrecta, intente nuevamente. \n");
@@ -49,3 +54,4 @@ int main(void) {
 
 	return 0;
 }
+
