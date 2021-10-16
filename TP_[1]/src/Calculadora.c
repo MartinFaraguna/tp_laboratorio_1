@@ -82,7 +82,6 @@ long int factorial(int num) {
 
 void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, long int *fact1, long int *fact2) {
 
-	if (num1 == NULL || num2 == NULL){
 
 	*sum = suma(num1, num2);
 	*rest = resta(num1, num2);
@@ -90,9 +89,7 @@ void operar(int num1, int num2, int *sum, int *rest, int *multi, float *div, lon
 	*div = division(num1, num2);
 	*fact1 = factorial(num1);
 	*fact2 = factorial(num2);
-	} else {
 
-	}
 }
 
 void mostrar(int num1, int num2, int sum, int rest, int multi, float div, long int fact1, long int fact2) {
